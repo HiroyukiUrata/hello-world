@@ -18,6 +18,13 @@ import { Cartesian3,Color } from 'cesium'
 			<BoxGraphics material={Color.BLUE} dimensions={new Cartesian3(400000.0, 300000.0, 500000.0)} />
 
 			</Entity>
+			<Entity
+			name="BoxGraphics"
+			description="BoxGraphics!!"
+			position={Cartesian3.fromDegrees(10.0707383, 61.7117244, 100)}>
+			<BoxGraphics material={Color.GREEN} dimensions={new Cartesian3(400000.0, 300000.0, 500000.0)} />
+
+			</Entity>
 		</Viewer>
 	  )
 	}
