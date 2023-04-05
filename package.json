@@ -6,14 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
-    "cesium": "^1.104.0",
+
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "copy-webpack-plugin": "^6.0.1",
