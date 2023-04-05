@@ -54,13 +54,13 @@ module.exports = {
       //   })
       // )
     }
-    config.plugins.push(
-      new webpack.DefinePlugin({
-        CESIUM_BASE_URL: JSON.stringify('/Cesium'),
-      })
-    )
-    config.resolve.exportsFields = []
-    // return {...config, resolve: {...config.resolve, exportsFields:[]}}
-    return config
+    // config.plugins.push(
+    //   new webpack.DefinePlugin({
+    //     CESIUM_BASE_URL: JSON.stringify('/Cesium'),
+    //   })
+    // )
+    // config.resolve.exportsFields = []
+    // // return {...config, resolve: {...config.resolve, exportsFields:[]}}
+    // return config
   },
 }
