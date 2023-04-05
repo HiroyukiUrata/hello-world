@@ -1,26 +1,11 @@
 const CopyWebpackPlugin = require('webpack')
 const path = require('path')
 
-
-// const webpack = require('webpack');
-
-// module.exports = {
-//   reactStrictMode: true,
-//   webpack: config => {
-//   config.plugins.push(
-//     new webpack.DefinePlugin({
-//     CESIUM_BASE_URL: JSON.stringify('cesium'),
-//     }),
-//   );
-//   return config;
-//   }
-// }
-
 module.exports = {
   webpack: (config, { webpack, isServer }) => {
     if (!isServer) {
       config.plugins.push(
-        webpack.DefinePlugin({
+        new CopyWebpackPlugin({
           patterns: [
             {
               from: path.join(
