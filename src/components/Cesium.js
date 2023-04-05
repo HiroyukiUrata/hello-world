@@ -3,7 +3,7 @@ import { Cartesian3,Color } from 'cesium'
 
 	export default function Cesium() {
 	  return (
-		<Viewer>
+		<Viewer full>
 			<Entity
 			name="BoxGraphics"
 			description="BoxGraphics!!"
